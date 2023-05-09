@@ -1,0 +1,35 @@
+@import "./mixins.scss";
+
+.wrapper {
+    width: 100wh;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--background-Color);
+    position: relative;
+    display: flex;
+
+    .container{
+        min-height: 1300px;
+        flex: 1;
+        margin-left: 40px;
+        background-color: var(--background-Color);
+        @include lessmd{
+            margin-top: 40px;
+         }
+        @include xl {
+            margin-left: 150px;
+        }
+
+        @include lg{
+            min-height: 1000px;
+        } 
+
+        .content{
+            margin-right:  40px;
+            @include xl {
+                margin-right:  129px;
+            }
+              
+        }
+    }
+}
